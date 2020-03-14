@@ -1,19 +1,4 @@
-
-
-@media only screen and (max-width : 640px) {
-    #myChart {
-        height: none;
-    }
-}
-  
-@media only screen and (max-width : 940px) {
-    #myChart {
-        height: none;
-    }
-}
-  
-@media only screen and (max-width : 640px) {
-    #myChart {
-        height: none;
-    }
+.portfolio-card {
+    border-radius: 4px;
+    background-color: #191919;
 }

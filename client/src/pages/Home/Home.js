@@ -1,12 +1,21 @@
 import React, { Component } from "react";
+import Navbar from "../../components/Navbar/Navbar";
 import "./style.css";
 
 class Home extends Component {
-    
+
     render() {
         return (
             <div>
-                <h1>React Investment Planner Homepage</h1>
+                <Navbar />
+                <div className="container">
+                    <div className="col-md-12">
+                        <div className="col-md-3 portfolio-card">
+                            <p>Stock Name</p>
+                            <p>SYMBOL</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
