@@ -10,9 +10,19 @@ class Home extends Component {
                 <Navbar />
                 <div className="container">
                     <div className="col-md-12">
-                        <div className="col-md-3 portfolio-card">
-                            <p>Stock Name</p>
-                            <p>SYMBOL</p>
+                        <div className="row">
+                            <div className="col-md-3 mr-md-auto ml-md-auto mt-3 portfolio-card">
+                                <p>Stock Name</p>
+                                <p>SYMBOL</p>
+                            </div>
+                            <div className="col-md-3 mr-md-auto ml-md-auto mt-3 portfolio-card">
+                                <p>Stock Name</p>
+                                <p>SYMBOL</p>
+                            </div>
+                            <div className="col-md-3 mr-md-auto ml-md-auto mt-3 portfolio-card">
+                                <p>Stock Name</p>
+                                <p>SYMBOL</p>
+                            </div>
                         </div>
                     </div>
                 </div>
