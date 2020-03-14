@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from './pages/Home/Home';
+import Portfolios from './pages/Portfolios/Portfolios';
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Switch>
           <div>
-            <Route exact path="/" component={Home}></Route>
+            <Route exact path="/" component={Portfolios}></Route>
           </div>
         </Switch>
       </Router>

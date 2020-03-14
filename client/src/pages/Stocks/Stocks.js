@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import "./style.css";
 
-class Home extends Component {
+class Stocks extends Component {
 
     render() {
         return (
@@ -32,4 +32,4 @@ class Home extends Component {
 
 }
 
-export default Home;
+export default Stocks;

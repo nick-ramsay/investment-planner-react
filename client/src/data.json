@@ -1,7 +1,7 @@
 [
     {
         "name": "Operation Wallstreet Phoenix",
-        "total_capital":73000,
+        "total_capital":73000.1,
         "investments": [
             {
                 "symbol": "AAPL",
@@ -19,7 +19,7 @@
     },
     {
         "name": "New Retirement IRA",
-        "total_capital":15000,
+        "total_capital":15000.01,
         "investments": [
             {
                 "symbol": "AAPL",
@@ -29,7 +29,7 @@
             },
             {
                 "symbol": "VTI",
-                "name": "Vanguard Total Market ETF",
+                "name": "Vanguard  Total Market ETF",
                 "type": "ETF",
                 "amount_allocated": 1000
             }
