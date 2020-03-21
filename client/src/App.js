@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Portfolios from './pages/Portfolios/Portfolios';
+import NewPortfolio from './pages/NewPortfolio/NewPortfolio';
 import './App.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Switch>
           <div>
             <Route exact path="/" component={Portfolios}></Route>
+            <Route exact path="/new-portfolio" component={NewPortfolio}></Route>
           </div>
         </Switch>
       </Router>

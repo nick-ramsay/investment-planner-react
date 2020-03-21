@@ -2,6 +2,7 @@
     margin-bottom: 100px;
 }
 
+
 .portfolio-card {
     border-radius: 4px;
     background-color: #191919;
@@ -26,7 +27,7 @@
     padding: 5px;
 }
 
-.openPortfolioBtn:hover,.addPortfolioBtn:hover {
+.openPortfolioBtn:hover, .addPortfolioBtn:hover {
     cursor: pointer;
     border: 1px solid #323232;
     border-radius: 4px;
