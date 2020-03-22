@@ -7,55 +7,61 @@ import "./style.css";
 function NewPortfolio() {
 
     const [portfolioData, setPortfolioData] = useState(portfolio_data);
+    const [newInvestmentShareCount, setNewInvestmentShareCount] = useState(0);
 
     return (
         <div>
             <Navbar />
             <div className="container">
-                <div className="col-md-12 mt-2 p-2 form-container">
+                <div className="col-md-12 mt-4 p-2 form-container">
+                    <form>
+                        <div className="form-row">
+                            <div className="form-group col-md-12">
+                                <label for="newPortfolioName">Portfolio Name</label>
+                                <input type="text" className="form-control" name="newPortfolioName" placeholder="Portfolio Name" />
+                            </div>
+                        </div>
+                        <div className="form-group">
+                            <label for="newPortfolioAmount">Total Capital</label>
+                            <input type="number" min="0.00" defaultValue="0" step="0.01" className="form-control" name="newPortfolioAmount" placeholder="Total Capital" />
+                        </div>
+                        <button type="button" className="btn btn-custom defaultBtn" name="saveNewPortfolioBtn">Save</button>
+                    </form>
+                </div>
+                <div className="col-md-12 mt-4 p-2 form-container">
                     <form>
                         <div className="form-row">
                             <div className="form-group col-md-6">
-                                <label for="inputEmail4">Email</label>
-                                <input type="email" className="form-control" id="inputEmail4" placeholder="Email" />
+                                <label for="addPortfolioName">Investment Name</label>
+                                <input type="text" className="form-control" name="addInvestmentName" placeholder="Investment Name" />
                             </div>
                             <div className="form-group col-md-6">
-                                <label for="inputPassword4">Password</label>
-                                <input type="password" className="form-control" id="inputPassword4" placeholder="Password" />
+                                <label for="addPortfolioSymbol">Investment Symbol</label>
+                                <input type="text" className="form-control" name="addInvestmentSymbol" placeholder="Investment Symbol" />
                             </div>
-                        </div>
-                        <div className="form-group">
-                            <label for="inputAddress">Address</label>
-                            <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" />
-                        </div>
-                        <div className="form-group">
-                            <label for="inputAddress2">Address 2</label>
-                            <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
                         </div>
                         <div className="form-row">
-                            <div className="form-group col-md-6">
-                                <label for="inputCity">City</label>
-                                <input type="text" className="form-control" id="inputCity" />
-                            </div>
-                            <div className="form-group col-md-4">
-                                <label for="inputState">State</label>
-                                <select id="inputState" className="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
+                            <div class="form-group col-md-4">
+                                <label for="addInvestmentType">Investment Type</label>
+                                <select name="addInvestmentType" class="form-control">
+                                    <option selected>Choose investment type...</option>
+                                    <option>Stock</option>
+                                    <option>ETF</option>
+                                    <option>Mutual Fund</option>
+                                    <option>REIT</option>
                                 </select>
                             </div>
-                            <div className="form-group col-md-2">
-                                <label for="inputZip">Zip</label>
-                                <input type="text" className="form-control" id="inputZip" />
+                            <div className="form-group col-md-4">
+                                <label for="addInvestmentAmount">Investment Amount</label>
+                                <input type="number" min="0.00" defaultValue="0" step="0.01" className="form-control" name="addInvestmentAmount" placeholder="Investment Amount" />
                             </div>
-                        </div>
-                        <div className="form-group">
-                            <div className="form-check">
-                                <input className="form-check-input" type="checkbox" id="gridCheck" />
-                                <label className="form-check-label" for="gridCheck">Check me out</label>
+                            <div className="form-group col-md-4">
+                                <label for="addInvestmentPrice">Investment Price</label>
+                                <input type="number" min="0.00" defaultValue="0" step="0.01" className="form-control" name="addInvestmentPrice" placeholder="Investment Price" />
                             </div>
+                            <p>You can buy {newInvestmentShareCount} shares of this investment.</p>
                         </div>
-                        <button type="button" className="btn btn-custom defaultBtn">Save</button>
+                        <button type="button" className="btn btn-custom defaultBtn" name="addNewInvestmentBtn">Add New Investment</button>
                     </form>
                 </div>
             </div>

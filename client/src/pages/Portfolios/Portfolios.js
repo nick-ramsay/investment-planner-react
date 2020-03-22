@@ -8,6 +8,12 @@ function Portfolios() {
 
     const [portfolioData, setPortfolioData] = useState(portfolio_data);
 
+    /*createNewPortfolio = event => {
+        event.preventDefault();
+        console.log("Clicked create new portfolio button!")
+
+    }*/
+
     return (
         <div>
             <Navbar />
@@ -15,7 +21,7 @@ function Portfolios() {
                 <div className="col-md-12">
                     <div className="row">
                         <div className="col-md-3 mr-md-auto ml-md-auto mt-3 text-center portfolio-card" id="addPortfolioCard">
-                            <span className="addPortfolioBtn">+</span>
+                            <span className="addPortfolioBtn" name="addPortfolioBtn">+</span>
                             <h5>Add New Portolio</h5>
                         </div>
                         {portfolioData.map((portfolio, index) => {
