@@ -7,7 +7,8 @@ import "./style.css";
 function NewPortfolio() {
 
     const [portfolioData, setPortfolioData] = useState(portfolio_data);
-    const [newInvestmentShareCount, setNewInvestmentShareCount] = useState(0);
+    const [newInvestmentAmount, setNewInvestmentAmount] = useState(0);
+    const [newInvestmentPrice, setNewInvestmentPrice] = useState(0);
 
     return (
         <div>
@@ -53,13 +54,13 @@ function NewPortfolio() {
                             </div>
                             <div className="form-group col-md-4">
                                 <label for="addInvestmentAmount">Investment Amount</label>
-                                <input type="number" min="0.00" defaultValue="0" step="0.01" className="form-control" name="addInvestmentAmount" placeholder="Investment Amount" />
+                                <input type="number" min="0.00" defaultValue="0" step="0.01" className="form-control" onChange={e => setNewInvestmentAmount(e.target.value)} name="addInvestmentAmount" placeholder="Investment Amount" />
                             </div>
                             <div className="form-group col-md-4">
                                 <label for="addInvestmentPrice">Investment Price</label>
-                                <input type="number" min="0.00" defaultValue="0" step="0.01" className="form-control" name="addInvestmentPrice" placeholder="Investment Price" />
+                                <input type="number" min="0.00" defaultValue="0" step="0.01" className="form-control" onChange={e => setNewInvestmentPrice(e.target.value)} name="addInvestmentPrice" placeholder="Investment Price" />
                             </div>
-                            <p>You can buy {newInvestmentShareCount} shares of this investment.</p>
+                            <p>{newInvestmentAmount > 0 && newInvestmentPrice > 0 && "You can buy " + Math.floor(newInvestmentAmount / newInvestmentPrice) + " shares of this investment."}</p>
                         </div>
                         <button type="button" className="btn btn-custom defaultBtn" name="addNewInvestmentBtn">Add New Investment</button>
                     </form>
