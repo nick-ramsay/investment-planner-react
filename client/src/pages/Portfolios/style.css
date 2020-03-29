@@ -5,7 +5,6 @@
 .portfolio-card {
     border-radius: 4px;
     background-color: #191919;
-    
 }
 
 #addPortfolioCard {
@@ -32,4 +31,5 @@
     border-radius: 4px;
     padding: 4px;
     background-color: #323232;
+    text-decoration: none;
 }
