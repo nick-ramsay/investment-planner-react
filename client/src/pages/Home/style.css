@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/jumbotron-background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+.container {
+    margin-bottom: 100px;
+}
+
+.portfolio-card {
+    border-radius: 4px;
+    background-color: #191919;
+}
+
+#addPortfolioCard {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.addPortfolioBtn {
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+    font-weight:bold;
+    text-align: center;
+}
+
+.openPortfolioBtn {
+    color: blue;
+    padding: 5px;
+}
+
+.openPortfolioBtn:hover,.addPortfolioBtn:hover {
+    cursor: pointer;
+    border: 1px solid #323232;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #323232;
+    text-decoration: none;
+}
